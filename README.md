@@ -36,43 +36,7 @@ Using **Python virtual environment** is highly recommended.
 
 ### Sample output :
 
-![](sample_output.jpg)
-
-## Training
-You can download the dataset I gathered from Google Images from this [link](https://github.com/arunponnusamy/gender-detection-keras/releases/download/v0.1/gender_dataset_face.zip) and train the network from scratch on your own if you are interested. You can add more images and play with the hyper parameters to experiment different ideas. 
-
-# Gender detection (from scratch) using deep learning with keras and cvlib
-The keras model is created by training [SmallerVGGNet](model.png) from scratch on around 2200 face images (~1100 for each class). Face region is cropped by applying `face detection` using `cvlib` on the images gathered from Google Images. It acheived around 96% training accuracy and ~90% validation accuracy. (20% of the dataset is used for validation)
-
-## Update :
-Checkout the gender detection functionality implemented in [cvlib](https://github.com/arunponnusamy/cvlib) which can be accessed through a single function call `detect_gender()`. 
-
-## Python packages
-* numpy
-* opencv-python
-* tensorflow
-* keras
-* requests
-* progressbar
-* cvlib
-
-
-
-## Usage
-
-### image input
-`$ python detect_gender.py -i <input_image>`
-
-### webcam
-`$ python detect_gender_webcam.py`
-
-When you run the script for the first time, it will download the pre-trained model from this [link](https://github.com/arunponnusamy/cvlib/releases/download/v0.2.0/gender_detection.model) and place it under `pre-trained` directory in the current path.
-
-(If `python` command invokes default Python 2.7, use `python3` instead)
-
-### Sample output :
-
-![](sample_output.jpg)
+![](./Images/gender_detection.jpg)
 
 ## Training
 You can download the dataset I gathered from Google Images from this [link](https://github.com/arunponnusamy/gender-detection-keras/releases/download/v0.1/gender_dataset_face.zip) and train the network from scratch on your own if you are interested. You can add more images and play with the hyper parameters to experiment different ideas. 
